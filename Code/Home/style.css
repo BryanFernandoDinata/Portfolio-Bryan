@@ -28,6 +28,14 @@ body
     background-attachment: fixed;
     background-size: 1440px;
 }
+.Hamburger-Menu
+{
+    display: none;
+}
+.hamburger-side-menu
+{
+    display: none;
+}
 .container nav
 {
     display: flex;
@@ -330,6 +338,52 @@ footer
 }
 @media all and (max-width:431px)
 {
+    .Hamburger-Menu
+    {
+        display: inherit;
+    }
+    .hamburger-side-menu
+    {
+        display: none;
+    }
+    .hamburger-side-menu.active
+    {
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100vw;
+        height: 100vh;
+        background-color: #7F60E5;
+        position: fixed;
+    }
+    .hamburger-side-menu svg
+    {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 40px;
+        margin: 2rem;
+        cursor: pointer;
+    }
+    .hamburger-side-menu ul li
+    {
+        margin-right: 2rem;
+        list-style: none;
+    }
+    .hamburger-side-menu ul li a
+    {
+        font-weight: 500;
+        color: #B5A9C1;
+        font-size: 40px;
+        text-decoration: none;
+    }
+    .hamburger-side-menu ul li a:hover
+    {
+        color: #B28ED4;
+    }
     .container nav
     {
         display: flex;
