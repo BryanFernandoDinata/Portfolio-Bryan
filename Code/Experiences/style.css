@@ -28,6 +28,10 @@ body
     background-attachment: fixed;
     background-size: 1440px;
 }
+.mobile-folder-image
+{
+    display: none;
+}
 .Hamburger-Menu
 {
     display: none;
@@ -247,6 +251,15 @@ footer
 /* responsive */
 @media all and (max-width:431px)
 {
+    .mobile-folder-image
+    {
+        margin-top: -5rem;
+        display: flex;
+        width: 15rem;
+        height: 15rem;
+        margin-bottom: 7rem;
+        object-fit: cover;
+    }
     .Hamburger-Menu
     {
         display: inherit;
